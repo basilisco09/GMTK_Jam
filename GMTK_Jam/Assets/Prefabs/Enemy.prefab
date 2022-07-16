@@ -188,15 +188,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4648293607761627525}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05184e401f35da3428a7ea5fd4f650f6, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ba91bd1d84f6194e82ad6ff9a8e250c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 1070054319040881397}
-  speed: 5
-  groundCheck: {fileID: 2957705307856888475}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 8
+  speed: 0
+  stopDistance: 0
+  patrolPoints: []
 --- !u!1 &4972836679741791425
 GameObject:
   m_ObjectHideFlags: 0

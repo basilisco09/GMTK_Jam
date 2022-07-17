@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 41fe03b6201f65f4d990fea288016e84
+guid: 4baf6651decf379408f430b49b8baf56
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 653, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: boxes&container 1_0
+      name: houses1 1_0
       rect:
         serializedVersion: 2
-        x: 457
-        y: 223
-        width: 823
-        height: 643
+        x: 121
+        y: 104
+        width: 692
+        height: 820
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba42bfc8204e8a443acb2cbc7b57fa98
-      internalID: -791103531
+      spriteID: 6978f0ce6567559439292a2186594fc6
+      internalID: -275871849
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boxes&container 1_1
+      name: houses1 1_1
       rect:
         serializedVersion: 2
-        x: 1606
-        y: 299
-        width: 314
-        height: 578
+        x: 946
+        y: 229
+        width: 951
+        height: 652
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,29 +139,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e540545b374fad4b996e1ca9cd651e8
-      internalID: -1648157801
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: boxes&container 1_2
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 232
-        width: 435
-        height: 679
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc7d0509d955a2746ba6d9530ae6bec2
-      internalID: 848014928
+      spriteID: 188d49f13b4dd034a8d296271dd8fbf6
+      internalID: 15831789
       vertices: []
       indices: 
       edges: []
@@ -170,17 +149,15 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      boxes&container 1_1: -1648157801
-      boxes&container_0: 1215079230
-      boxes&container 1_2: 848014928
-      boxes&container 1_0: -791103531
+      houses1 1_1: 15831789
+      houses1 1_0: -275871849
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -107,12 +107,12 @@ TextureImporter:
       name: wheels&hydrant_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 1310
+        y: 166
+        width: 610
+        height: 495
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -120,6 +120,27 @@ TextureImporter:
       bones: []
       spriteID: a0669fa822c0f314eb0ec2660baebe96
       internalID: -1892782922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wheels&hydrant_1
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 225
+        width: 240
+        height: 324
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0036b913589e825418abd5670a288ca1
+      internalID: -1571820192
       vertices: []
       indices: 
       edges: []
@@ -135,6 +156,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      wheels&hydrant_1: -1571820192
       wheels&hydrant_0: -1892782922
   spritePackingTag: 
   pSDRemoveMatte: 0

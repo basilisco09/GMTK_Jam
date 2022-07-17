@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] private Transform wallCheck;
     [SerializeField] private float wallCheckDistance;
+    [SerializeField] private Animator animator;
     private GameObject pauseMenu;
     private Pause pause;
     private float horizontal;
@@ -50,6 +51,22 @@ public class PlayerMovement : MonoBehaviour
             }
             Flip();
             CheckSurround();
+        }
+
+        if(rb.velocity.y != 0)
+        {
+            animator.SetBool("IsJumping", true);
+        }
+        else
+        {
+            animator.SetBool("IsJumping", false);
+        }
+
+        if (rb.velocity.x == 0 && rb.velocity.y == 0)
+        {
+            animator.SetBool("IsJumping", false);
+            animator.SetBool("IsRuning", false);
+            animator.SetBool("IsIdle", true);
         }
     }
 

@@ -341,7 +341,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 76351675}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1032138113}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &76351675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -463,7 +475,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 284423778}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1032138113}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: PlayGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &284423778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -585,7 +609,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 611300153}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1032138113}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: Back
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &611300153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -636,6 +672,7 @@ GameObject:
   - component: {fileID: 1032138111}
   - component: {fileID: 1032138110}
   - component: {fileID: 1032138109}
+  - component: {fileID: 1032138113}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -729,6 +766,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1032138113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032138108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8577bcca9b2439478da7c8cec379f64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1101400555
 GameObject:
   m_ObjectHideFlags: 0
@@ -807,7 +856,7 @@ Transform:
   m_GameObject: {fileID: 1101400555}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.48535752, y: -0.06285235, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

@@ -13,7 +13,6 @@ public class RandonParameters : MonoBehaviour
     void Start()
     {
         SetRandonParameters();
-        Debug.Log(playerHealth.health);
     }
 
     // Update is called once per frame

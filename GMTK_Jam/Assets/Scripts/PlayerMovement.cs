@@ -8,10 +8,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] private Transform wallCheck;
     [SerializeField] private float wallCheckDistance;
+    private GameObject pauseMenu;
+    private Pause pause;
     private float horizontal;
     private bool isFacingRight = true;
     private bool isGrounded;
     private bool isTouchingWall;
+    private bool gamePaused;
 
     private int jumpCounter;
 
@@ -19,48 +22,56 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
-
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
-        if (Input.GetKeyDown("space") && jumpCounter == 0)
+        pauseMenu = GameObject.Find("PauseMenu");
+        if (pauseMenu != null)
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            jumpCounter++;
+            pause = pauseMenu.GetComponent<Pause>();
+            gamePaused = pause.gameIsPaused;
         }
-        if (Input.GetKeyDown("space") && jumpCounter == 1)
+        Debug.Log(gamePaused);
+        if (!gamePaused)
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce * 0.8f);
-            jumpCounter++;
+            horizontal = Input.GetAxisRaw("Horizontal");
+            if (Input.GetKeyDown("space") && jumpCounter == 0)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                jumpCounter++;
+            }
+            if (Input.GetKeyDown("space") && jumpCounter == 1)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce * 0.8f);
+                jumpCounter++;
+            }
+            if (isGrounded)
+            {
+                jumpCounter = 0;
+            }
+            Flip();
+            CheckSurround();
         }
-        if (isGrounded)
-        {
-            jumpCounter = 0;
-        }
-        Flip();
-        CheckSurround();
-
     }
 
     private void FixedUpdate()
     {
-        if (!isGrounded && isTouchingWall)
-        {
-            rb.velocity = new Vector2(0f, rb.velocity.y);
-        }
-        else
-        {
-            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-        }
+            if (!isGrounded && isTouchingWall)
+            {
+                rb.velocity = new Vector2(0f, rb.velocity.y);
+            }
+            else
+            {
+                rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+            }
     }
 
     private void Flip()
     {
-        if ((horizontal < 0f && isFacingRight) || (horizontal > 0f && !isFacingRight))
-        {
-            isFacingRight = !isFacingRight;
-            transform.Rotate(0f, 180f, 0f);
-        }
+            if ((horizontal < 0f && isFacingRight) || (horizontal > 0f && !isFacingRight))
+            {
+                isFacingRight = !isFacingRight;
+                transform.Rotate(0f, 180f, 0f);
+            }
     }
 
     private void CheckSurround()

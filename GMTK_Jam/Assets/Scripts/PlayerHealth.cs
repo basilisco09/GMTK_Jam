@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -29,7 +30,6 @@ public class PlayerHealth : MonoBehaviour
         if (index < 0) 
         {
             Die();
-            Time.timeScale = 0;
         }
         else
         {
@@ -39,6 +39,6 @@ public class PlayerHealth : MonoBehaviour
 
     public void Die()
     {
-        Destroy(gameObject);
+        SceneManager.LoadScene("Game Over");
     }
 }

@@ -25,12 +25,16 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(int damage)
     {
         Destroy(dices[index]);
-        index = damage - 1;
+        index -= damage;
         if (index < 0) 
         {
             Die();
+            Time.timeScale = 0;
         }
-        Instantiate(dices[index], diceTransform);
+        else
+        {
+            Instantiate(dices[index], diceTransform);
+        }
     }
 
     public void Die()

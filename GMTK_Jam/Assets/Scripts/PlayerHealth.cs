@@ -6,7 +6,7 @@ public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private Transform diceTransform;
     [SerializeField] private GameObject[] dices;
-    [SerializeField] public int health;
+    [HideInInspector] public int health;
     private int index;
 
     // Start is called before the first frame update

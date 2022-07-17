@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6615442241349277932}
   - component: {fileID: 6325578331361138514}
   - component: {fileID: -6640107348295659867}
-  - component: {fileID: 3822604301112734464}
+  - component: {fileID: 5243726152163665752}
   m_Layer: 0
   m_Name: Card
   m_TagString: Untagged
@@ -134,7 +134,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.01, y: 0.76}
   m_EdgeRadius: 0
---- !u!114 &3822604301112734464
+--- !u!114 &5243726152163665752
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,4 +148,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpeed: 20
   rb: {fileID: 6325578331361138514}
-  damage: 1
+  damage: 0

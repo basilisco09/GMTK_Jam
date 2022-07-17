@@ -8,7 +8,7 @@ public class MeleeAttack : MonoBehaviour
     [SerializeField] private Transform attackPoint;
     [SerializeField] private float attackRange;
     [SerializeField] private LayerMask enemyLayers;
-    [SerializeField] private int damage;
+    [SerializeField] public int damage;
 
     // Start is called before the first frame update
     void Start()

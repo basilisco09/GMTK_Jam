@@ -8,23 +8,29 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpForce = 10f;
     private float horizontal;
     private bool isFacingRight = true;
+    private int jumpCounter;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
-    private Vector3 localScale;
 
 
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
-        if(Input.GetKeyDown("space") && IsGrounded())
+        if (Input.GetKeyDown("space") && jumpCounter < 2)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            jumpCounter++;
         }
-        if(Input.GetKeyDown("space") && rb.velocity.y > 0f)
+        if (Input.GetKeyDown("space") && jumpCounter > 1)
         {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce * 0.8f);
+            jumpCounter++;
+        }
+        if (IsGrounded())
+        {
+            jumpCounter = 0;
         }
         Flip();
         
@@ -42,12 +48,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void Flip()
     {
-        if(isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
+        if((horizontal < 0f && isFacingRight) || (horizontal > 0f && !isFacingRight))
         {
             isFacingRight = !isFacingRight;
-            localScale = transform.localScale;
-            localScale.x *= -1f;
-            transform.localScale = localScale;
+            transform.Rotate(0f, 180f, 0f);
         }
     }
 }

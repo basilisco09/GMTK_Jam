@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 41fe03b6201f65f4d990fea288016e84
+guid: a04017cbbc4ec6c459a9d31f1e673530
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 653, w: 0}
+  spriteBorder: {x: 540, y: 297, z: 700, w: 10}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -104,34 +104,34 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: boxes&container 1_0
+      name: houded2 1_0
       rect:
         serializedVersion: 2
-        x: 457
-        y: 223
-        width: 823
-        height: 643
+        x: 535
+        y: 318
+        width: 684
+        height: 760
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba42bfc8204e8a443acb2cbc7b57fa98
-      internalID: -791103531
+      spriteID: 39e628ebb6b32f347996f6fdad841d3c
+      internalID: 1337929829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boxes&container 1_1
+      name: houded2 1_1
       rect:
         serializedVersion: 2
-        x: 1606
-        y: 299
-        width: 314
-        height: 578
+        x: 8
+        y: 282
+        width: 417
+        height: 788
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e540545b374fad4b996e1ca9cd651e8
-      internalID: -1648157801
+      spriteID: d12f55bf3ffe7564995530a0624adf4b
+      internalID: -447409415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boxes&container 1_2
+      name: houded2 1_2
       rect:
         serializedVersion: 2
-        x: 3
-        y: 232
-        width: 435
-        height: 679
+        x: 1359
+        y: 251
+        width: 561
+        height: 829
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,8 +160,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc7d0509d955a2746ba6d9530ae6bec2
-      internalID: 848014928
+      spriteID: e9caa89b1894cc04196e3c9e804782c0
+      internalID: 2117044298
       vertices: []
       indices: 
       edges: []
@@ -177,10 +177,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      boxes&container 1_1: -1648157801
-      boxes&container_0: 1215079230
-      boxes&container 1_2: 848014928
-      boxes&container 1_0: -791103531
+      houded2 1_2: 2117044298
+      houded2 1_1: -447409415
+      houded2 1_0: 1337929829
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

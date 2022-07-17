@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3fc713d360e3ce24394a0013b4f7876e
+guid: 6dd31460697c70a4999d6e62ed43f246
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -107,12 +107,12 @@ TextureImporter:
       name: City1_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1292
         y: 0
-        width: 1920
+        width: 628
         height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

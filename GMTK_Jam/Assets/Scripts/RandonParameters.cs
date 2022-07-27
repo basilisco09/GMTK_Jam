@@ -32,7 +32,7 @@ public class RandonParameters : MonoBehaviour
         playerHealth = player.GetComponent<PlayerHealth>();
         playerHealth.health = Sorting();
         playerMovement = player.GetComponent<PlayerMovement>();
-        playerMovement.speed = Sorting() * 5;
+        playerMovement.speed = Sorting() * 3;
         meleeAtack = player.GetComponent<MeleeAttack>();
         meleeAtack.damage = Sorting();
     }
